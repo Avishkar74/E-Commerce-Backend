@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: E-Commerce-Backend
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/ecommerce_db
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+razorpay:
+  key:
+    id: rzp_test_12345
+    secret: a2bmj
