@@ -33,6 +33,7 @@ public class PaymentWebhookController {
 
             String razorpayOrderId = json.getJSONObject("payload")
                     .getJSONObject("payment")
+                    .getJSONObject("entity")
                     .getString("order_id");
 
             Optional<Payment> paymentOpt = paymentRepository.findByPaymentId(razorpayOrderId);
